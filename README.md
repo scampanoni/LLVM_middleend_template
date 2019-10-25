@@ -1,7 +1,8 @@
 # LLVM_middleend_template
 
 This is the template to use for assignments of the Code Analysis and Transformation class at Northwestern
-  Website of the class = https://users.cs.northwestern.edu/~simonec/CAT.html
+
+Website of the class = https://users.cs.northwestern.edu/~simonec/CAT.html
 
 To build: 
   Compile and install your code by invoking ./run_me.sh
