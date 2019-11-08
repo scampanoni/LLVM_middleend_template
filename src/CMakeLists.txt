@@ -1,7 +1,5 @@
 # Sources
-set(CATPassSrc 
-  CatPass.cpp
-)
+file(GLOB CATPassSrc "*.cpp")
 
 # Compilation flags
 set_source_files_properties(${CATPassSrc} PROPERTIES COMPILE_FLAGS " -std=c++14 -fPIC")
