@@ -1,4 +1,4 @@
-﻿#!/bin/tcsh
+#!/bin/tcsh
 
 # Adds LLVM 9.0.1 to PATH
 setenv LLVM_HOME /home/software/llvm-9.0.1

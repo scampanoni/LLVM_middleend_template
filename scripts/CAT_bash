@@ -1,4 +1,4 @@
-﻿#!/bin/bash
+#!/bin/bash
 
 # Adds LLVM 9.0.1 to PATH
 LLVM_HOME=/home/software/llvm-9.0.1
