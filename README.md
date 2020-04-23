@@ -1,6 +1,6 @@
 # LLVM_middleend_template
 
-This is the template to use for assignments of the Code Analysis and Transformation class at Northwestern
+This is the template to use for assignments of the Code Analysis and Transformation class at Northwestern University.
 
 Website of the class = https://users.cs.northwestern.edu/~simonec/CAT.html
 
