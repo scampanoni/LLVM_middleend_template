@@ -11,4 +11,4 @@ make ;
 make install ;
 cd ../ 
 
-cp build/compile_commands.json catpass ;
+cp build/compile_commands.json ./ ;
