@@ -11,4 +11,6 @@ make ;
 make install ;
 cd ../ 
 
-ln -s build/compile_commands.json ./ ;
+if ! test -e compile_commands.json ;
+  ln -s build/compile_commands.json ./ ;
+fi
