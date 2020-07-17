@@ -6,9 +6,9 @@ export CXX=clang++
 rm -rf build/ ; 
 mkdir build ; 
 cd build ; 
-cmake3 -DCMAKE_INSTALL_PREFIX="~/CAT" -DCMAKE_BUILD_TYPE=Debug ../ ; 
+cmake -DCMAKE_INSTALL_PREFIX="~/CAT" -DCMAKE_BUILD_TYPE=Debug ../ ; 
 make ;
 make install ;
 cd ../ 
 
-cp build/compile_commands.json ./ ;
+ln -s build/compile_commands.json ./ ;
