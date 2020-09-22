@@ -3,10 +3,21 @@
 export CC=clang
 export CXX=clang++
 
+# Check the cmake binary
+command -v cmake3
+if test $? -eq 1 ; then
+  CMAKE="cmake" ;
+else
+  CMAKE="cmake3" ;
+fi
+
+# Clean
 rm -rf build/ ; 
+
+# Build
 mkdir build ; 
 cd build ; 
-cmake -DCMAKE_INSTALL_PREFIX="~/CAT" -DCMAKE_BUILD_TYPE=Debug ../ ; 
+${CMAKE} -DCMAKE_INSTALL_PREFIX="~/CAT" -DCMAKE_BUILD_TYPE=Debug ../ ; 
 make ;
 make install ;
 cd ../ 
