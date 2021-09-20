@@ -2,7 +2,7 @@
 file(GLOB CATPassSrc "*.cpp")
 
 # Compilation flags
-set_source_files_properties(${CATPassSrc} PROPERTIES COMPILE_FLAGS " -std=c++17")
+set_source_files_properties(${CATPassSrc} PROPERTIES COMPILE_FLAGS " -std=c++20")
 
 # Name of the LLVM pass
 set(CATPassName "CAT")
