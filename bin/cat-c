@@ -61,7 +61,7 @@ if test "$lib_dir" != "" ; then
   lib_cmd="-Wl,-L$lib_dir,$lib_cmd";
 fi
 
-clangToUse="clang-3.8" ;
+clangToUse="clang-14" ;
 which ${clangToUse} &> /dev/null ;
 if test $? -ne 0 ; then
   clangToUse="clang" ;
@@ -69,6 +69,6 @@ fi
 
 
 lib_cmd=""
-cmd="${clangToUse} -Xclang -load -Xclang $pass_cmd -fPIC $lib_cmd $options"
+cmd="${clangToUse} -flegacy-pass-manager -Xclang -load -Xclang $pass_cmd -fPIC $lib_cmd $options"
 
 $cmd
