@@ -54,7 +54,13 @@ if test "$pass_cmd" == "" ; then
     else
       suffixToUse="so" ;
     fi
-    pass_cmd="$installdir/../lib/CAT.${suffixToUse}";
+
+    # Figure out the lib prefix.
+    libprefix="lib"
+    if test -d "$installdir/../lib64"; then
+      libprefix="lib64"
+    fi
+    pass_cmd="$installdir/../$libprefix/CAT.${suffixToUse}";
   fi
 fi
 if test "$lib_dir" != "" ; then
